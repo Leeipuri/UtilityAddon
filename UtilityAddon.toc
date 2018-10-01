@@ -1,0 +1,5 @@
+## Interface: 11200
+## Title: UtilityAddon
+## Notes: Leipuri's Utility AddOn
+UtilityAddon.lua
+Bindings.xml

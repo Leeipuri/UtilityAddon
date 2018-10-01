@@ -1,0 +1,41 @@
+<Bindings>
+	<Binding name="CancelShapeshift" header="UTILITYADDON">
+		UtilityAddon:cs();
+	</Binding>
+	<Binding name="ForceCancel" header="UTILITYADDON">
+		UtilityAddon:fc();
+	</Binding>
+	<Binding name="TargetParty1Extra" header="UTILITYADDON">
+		TargetUnit("party1")
+	</Binding>
+	<Binding name="TargetParty2Extra" header="UTILITYADDON">
+		TargetUnit("party2")
+	</Binding>
+	<Binding name="TargetParty3Extra" header="UTILITYADDON">
+		TargetUnit("party3")
+	</Binding>
+	<Binding name="TargetParty4Extra" header="UTILITYADDON">
+		TargetUnit("party4")
+	</Binding>
+	<Binding name="NocancelStance1" header="UTILITYADDON">
+		UtilityAddon:ns(1);
+	</Binding>
+	<Binding name="NocancelStance2" header="UTILITYADDON">
+		UtilityAddon:ns(2);
+	</Binding>
+	<Binding name="NocancelStance3" header="UTILITYADDON">
+		UtilityAddon:ns(3);
+	</Binding>
+	<Binding name="NocancelStance4" header="UTILITYADDON">
+		UtilityAddon:ns(4);
+	</Binding>
+	<Binding name="NocancelStance5" header="UTILITYADDON">
+		UtilityAddon:ns(5);
+	</Binding>
+	<Binding name="NocancelStance6" header="UTILITYADDON">
+		UtilityAddon:ns(6);
+	</Binding>
+	<Binding name="NocancelStance7" header="UTILITYADDON">
+		UtilityAddon:ns(7);
+	</Binding>
+</Bindings>

@@ -1,0 +1,80 @@
+UtilityAddon.SetHealingPower(power)
+UtilityAddon.sh = UtilityAddon.SetHealingPower
+
+UtilityAddon.SetScanTarget(name)
+UtilityAddon.ss = UtilityAddon.SetScanTarget
+
+UtilityAddon.TargetScanTarget()
+UtilityAddon.ts = UtilityAddon.TargetScanTarget
+
+UtilityAddon.SetHealingScale(scale)
+UtilityAddon.hs=UtilityAddon.SetHealingScale
+
+UtilityAddon.SetMaxRankCondition(maxRankCondition)
+UtilityAddon.mc=UtilityAddon.SetMaxRankCondition
+
+UtilityAddon.isFriendly()
+UtilityAddon.f = UtilityAddon.isFriendly
+
+UtilityAddon.isEnemy()
+UtilityAddon.e = UtilityAddon.isEnemy
+
+UtilityAddon.NoCancelAction(actionnumber)
+UtilityAddon.na = UtilityAddon.NoCancelAction
+
+UtilityAddon.CancelShapeshift(...actions)
+UtilityAddon.cs = UtilityAddon.CancelShapeshift
+
+UtilityAddon.ForceCancel()
+UtilityAddon.fc = UtilityAddon.ForceCancel
+
+UtilityAddon.BuffCancel(unitname, buffstring)
+UtilityAddon.bc = UtilityAddon.BuffCancel
+
+UtilityAddon.ListBuffs(unitname)
+UtilityAddon.lb=UtilityAddon.ListBuffs
+
+UtilityAddon.ListDebuffs(unitname)
+UtilityAddon.ld=UtilityAddon.ListDebuffs
+
+UtilityAddon.CheckBuff(unitname, buffstring, spelltrue, spellfalse, control)
+UtilityAddon.cb = UtilityAddon.CheckBuff
+
+UtilityAddon.CheckDebuff(unitname, buffstring, spelltrue, spellfalse, control)
+UtilityAddon.cd = UtilityAddon.CheckDebuff
+
+UtilityAddon.CancelNot(shapeshiftindex, ...actions)
+UtilityAddon.cn = UtilityAddon.CancelNot
+
+UtilityAddon.SSConditional(humanoid, bear, cat)
+UtilityAddon.sc = UtilityAddon.SSConditional
+
+UtilityAddon.SpellRanks(spellname, spellpower, {{rank,minheal,manacost[,derankmultiplier]},..}, scale, control)
+UtilityAddon.sr = UtilityAddon.SpellRanks
+
+UtilityAddon.RunMacro(macroname)
+UtilityAddon.rm = UtilityAddon.RunMacro
+	
+UtilityAddon.NocancelStance(stance)
+UtilityAddon.ns = UtilityAddon.NocancelStance
+
+UtilityAddon.LowLevelDerank(spellname, spellranklevels, targetlevel)
+UtilityAddon.ld = UtilityAddon.LowLevelDerank
+
+
+
+### NOTES
+
+hooksecurefunc([table,] "functionName", hookfunc)
+
+PlaySoundFile("Interface\\AddOns\\MyAddOn\\mysound.mp3/ogg")
+
+<OnLoad>
+	self:RegisterEvent("PLAYER_DEAD");
+</OnLoad>
+<OnEvent> 
+	repopme_OnEvent(event);
+</OnEvent>
+
+/run LRanks:setHealingPower(363)
+/run LRanks:sr("Flash of Light",{{6,384,140,43},{5,299,115,43},{4,220,90,43},{3,162,70,43},{2,107,50,43},{1,69,35,43}},LRanks.healingScale,1)
